@@ -1,18 +1,14 @@
-
 import 'dart:io';
-
 main() {
-
   List names = [];
   makelist(names);
-  tuple("3,5,7,23");
   
+  tuple("3,5,7,23");
 }
 
 
 makelist(List names){
   bool flage = true;
-
   while (flage) {
     print("please enter a name or enter 0 to stop");
     var name = stdin.readLineSync().toString();
@@ -30,6 +26,7 @@ makelist(List names){
     print(names[count]);
   }
 }
+
 tuple(String word) {
   List<String> list = word.split(",");
   print("List : $list");
